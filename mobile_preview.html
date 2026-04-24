@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Preview Tool | KABUKIMONO</title>
+    <style>
+        :root {
+            --bg: #121212;
+            --phone-bg: #000;
+            --text: #fff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .controls {
+            margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            background: #333;
+            color: white;
+            border: 1px solid #444;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .btn.active {
+            background: #FF0033;
+            border-color: #FF0033;
+        }
+
+        .phone-frame {
+            position: relative;
+            width: 375px; /* iPhone 13/14 width */
+            height: 812px; /* iPhone 13/14 height */
+            background: var(--phone-bg);
+            border: 12px solid #222;
+            border-radius: 40px;
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .phone-frame iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .notch {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 30px;
+            background: #222;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            z-index: 10;
+        }
+
+        .device-info {
+            margin-top: 20px;
+            font-size: 12px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <button class="btn active" onclick="setSize(375, 812, this)">iPhone 13/14</button>
+        <button class="btn" onclick="setSize(414, 896, this)">iPhone Pro Max</button>
+        <button class="btn" onclick="setSize(390, 844, this)">Pixel 7</button>
+        <button class="btn" onclick="setSize(320, 568, this)">iPhone SE</button>
+    </div>
+
+    <div class="phone-frame" id="phone">
+        <div class="notch"></div>
+        <iframe src="index.html" id="preview-frame"></iframe>
+    </div>
+
+    <div class="device-info" id="info">
+        Viewport: 375 x 812 (iPhone 13/14)
+    </div>
+
+    <script>
+        function setSize(w, h, btn) {
+            const phone = document.getElementById('phone');
+            const info = document.getElementById('info');
+            const buttons = document.querySelectorAll('.btn');
+            
+            phone.style.width = w + 'px';
+            phone.style.height = h + 'px';
+            info.innerText = `Viewport: ${w} x ${h} (${btn.innerText})`;
+
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+    </script>
+</body>
+</html>

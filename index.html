@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飄々と生きろ | MODERN KABUKIMONO THINKING</title>
+    
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700;900&family=Yuji+Syuku&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Audio Control -->
+    <div class="audio-control">
+        <button id="audio-toggle" class="btn-audio"><i class="fas fa-volume-mute"></i> 音声なし</button>
+        <audio id="bg-audio" loop>
+            <source src="promo_video.mp4" type="video/mp4">
+        </audio>
+    </div>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta">
+        <a href="https://t.co/hCzPyEQ8Kw" target="_blank" class="btn-floating">Amazonで今すぐ読む</a>
+    </div>
+
+    <main class="main-wrapper snap-container">
+        
+        <!-- Page 1: Hero -->
+        <header class="page hero active snap-section" id="page-1">
+            <video autoplay muted loop playsinline class="hero-video-bg">
+                <source src="hero_video_new.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-title-stack">
+                    <img src="title2.png" alt="飄々と生きろ" class="title-img-2 animate-reveal">
+                    <img src="title3.png" alt="かぶきもの思考" class="title-img-3 animate-reveal">
+                </div>
+                <div class="cta-wrap reveal-btn">
+                    <a href="https://t.co/hCzPyEQ8Kw" target="_blank" class="btn-premium">BUY ON AMAZON</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page 2: Chapter 1 Summary -->
+        <section class="page content-split snap-section" id="page-2">
+            <div class="container">
+                <div class="brush-summary-mini">
+                    <h2 class="brush-title-mini">第一章：かぶきものの正体</h2>
+                    <p class="brush-body-mini">
+                        「仮面」の下で、牙を研げ。<br>
+                        静かに情熱を燃やせ。
+                    </p>
+                </div>
+                <div class="center-cta" style="margin-top: 5vh;">
+                    <a href="https://t.co/hCzPyEQ8Kw" target="_blank" class="btn-premium">解決策を Amazon で見る</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 3: Final Action & Separated X Link -->
+        <section class="page footer-wrap snap-section" id="page-3">
+            <!-- Final Purchase Area -->
+            <div class="container action-upper">
+                <div class="final-action-stack">
+                    <h2 class="cta-title-mini">いざ、傾け。</h2>
+                    <div style="margin-top: 2rem;">
+                        <a href="https://t.co/hCzPyEQ8Kw" target="_blank" class="btn-premium">今すぐ Amazon で購入</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prominent X Link at the absolute bottom -->
+            <div class="x-footer-area">
+                <div class="container">
+                    <div class="x-link-container">
+                        <a href="https://x.com/Kabukimono_biz" target="_blank" class="x-link-box">
+                            <i class="fab fa-x-twitter"></i>
+                            <span>@Kabukimono_biz</span>
+                        </a>
+                    </div>
+                    <footer class="footer-ultra-minimal">
+                        <p>&copy; 2026 KABUKIMONO. ALL RIGHTS RESERVED.</p>
+                    </footer>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

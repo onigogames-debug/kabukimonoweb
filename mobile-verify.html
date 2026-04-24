@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Verification Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #FF0033;
+            --secondary: #D4AF37;
+            --bg: #0A0A0A;
+            --card-bg: #1A1A1A;
+            --text: #FFFFFF;
+            --text-dim: rgba(255, 255, 255, 0.6);
+            --accent: #00F0FF;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            overflow-x: hidden;
+        }
+
+        .dashboard {
+            width: 100%;
+            max-width: 500px;
+            background: var(--card-bg);
+            border-radius: 24px;
+            padding: 2.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+
+        header { text-align: center; margin-bottom: 2rem; }
+        h1 { font-family: 'Inter', sans-serif; font-weight: 900; font-size: 1.5rem; margin-bottom: 0.5rem; }
+        p.subtitle { font-size: 0.9rem; color: var(--text-dim); }
+
+        .qr-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 16px;
+            margin-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .url-box {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.05);
+            padding: 1rem;
+            border-radius: 8px;
+            font-family: monospace;
+            font-size: 0.8rem;
+            color: #333;
+            word-break: break-all;
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .info-label { font-size: 0.7rem; color: var(--text-dim); margin-bottom: 0.3rem; }
+        .info-value { font-weight: 600; font-size: 1rem; color: var(--secondary); }
+
+        .btn-group { display: flex; flex-direction: column; gap: 1rem; }
+        .btn {
+            display: flex; align-items: center; justify-content: center; gap: 0.8rem;
+            padding: 1rem; border-radius: 12px; text-decoration: none; font-weight: 700;
+        }
+        .btn-primary { background: var(--primary); color: white; }
+        .btn-outline { background: transparent; border: 1px solid rgba(255, 255, 255, 0.2); color: white; }
+
+        .warning-card {
+            background: rgba(255, 0, 51, 0.1);
+            border: 1px solid var(--primary);
+            padding: 1rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard">
+        <header>
+            <h1>MOBILE VERIFICATION</h1>
+            <p class="subtitle">Scan to verify Kabukimono LP on your phone</p>
+        </header>
+
+        <div id="warning" class="warning-card">
+            <p style="font-size: 0.85rem; color: var(--primary); font-weight: bold;">
+                ⚠️ PCで直接ファイルを開いています
+            </p>
+            <p style="font-size: 0.75rem; color: var(--text); margin-top: 0.5rem;">
+                スマホで開くには、PC側でサーバーを起動する必要があります。<br>
+                現在 <strong>Port: 8000</strong> でサーバーを起動しました。
+            </p>
+        </div>
+
+        <div class="qr-section">
+            <div id="qrcode-container">
+                <img id="qr-img" src="" alt="QR Code" style="display: none; width: 200px; height: 200px;">
+                <div id="qr-placeholder" style="width: 200px; height: 200px; background: #eee; display: flex; align-items: center; justify-content: center; color: #999;">
+                    <i class="fas fa-spinner fa-spin fa-2x"></i>
+                </div>
+            </div>
+            <div class="url-box" id="current-url">Detecting URL...</div>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <div class="info-label">Local IP</div>
+                <div class="info-value" id="local-ip">192.168.11.17</div>
+            </div>
+            <div class="info-item">
+                <div class="info-label">Port</div>
+                <div class="info-value" id="local-port">8000</div>
+            </div>
+        </div>
+
+        <div class="btn-group">
+            <a href="index.html" class="btn btn-primary" id="open-local">
+                <i class="fas fa-external-link-alt"></i> OPEN LOCAL SITE
+            </a>
+            <button onclick="copyUrl()" class="btn btn-outline">
+                <i class="fas fa-copy"></i> COPY URL
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const LOCAL_IP = '192.168.11.17'; 
+        const PORT = '8000';
+
+        function updateUI() {
+            const urlBox = document.getElementById('current-url');
+            const qrImg = document.getElementById('qr-img');
+            const qrPlaceholder = document.getElementById('qr-placeholder');
+            const warning = document.getElementById('warning');
+            const openLocal = document.getElementById('open-local');
+
+            let targetUrl = `http://${LOCAL_IP}:${PORT}/index.html`;
+
+            if (window.location.protocol === 'file:') {
+                warning.style.display = 'block';
+                openLocal.href = targetUrl;
+            } else {
+                // If accessed via localhost, use the IP version for QR code
+                targetUrl = window.location.href.replace(window.location.hostname, LOCAL_IP).replace('mobile-verify.html', 'index.html');
+            }
+
+            urlBox.innerText = targetUrl;
+
+            const qrApiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(targetUrl)}`;
+            qrImg.src = qrApiUrl;
+            qrImg.onload = () => {
+                qrImg.style.display = 'block';
+                qrPlaceholder.style.display = 'none';
+            };
+        }
+
+        function copyUrl() {
+            const url = document.getElementById('current-url').innerText;
+            navigator.clipboard.writeText(url).then(() => alert('URL copied!'));
+        }
+
+        window.onload = updateUI;
+    </script>
+</body>
+</html>
