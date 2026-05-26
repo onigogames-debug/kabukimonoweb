@@ -90,6 +90,7 @@ function initKabukimonoLp() {
     const elementsToObserve = [
         document.querySelector('.hero'),
         document.querySelector('.content-split'),
+        document.querySelector('.strategy-section'),
         document.querySelector('.footer-wrap')
     ];
 

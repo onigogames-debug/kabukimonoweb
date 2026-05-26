@@ -38,6 +38,14 @@ window.KABUKIMONO.getClickLog()
 window.KABUKIMONO.getLanding()
 ```
 
+## Weekly Marketing Operation
+
+- Use `SOCIAL_CALENDAR.md` for daily X post selection.
+- Use `MARKETING_PLAN.md` for campaign URL discipline.
+- Use `WEEKLY_GROWTH.md` every Friday or weekend to record numbers.
+- Use `REVIEW_OUTREACH.md` for review asks; keep review asks to a controlled cadence.
+- Use `promo-assets/` images for X and Instagram posts.
+
 ## Amazon Associate
 
 When an Amazon Associate tag is available, replace links like:

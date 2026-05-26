@@ -7,8 +7,20 @@
 - Reader share LP: https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=reader_share
 - Problem post LP: https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=problem_post
 - Review ask LP: https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=review_ask
+- Quote post LP: https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=quote_post
+- Weekly push LP: https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=weekly_push
 - Amazon KDP: https://www.amazon.co.jp/dp/B0GY8549WX
 - X: https://x.com/Kabukimono_biz
+
+## Campaign Assets
+
+- `SOCIAL_CALENDAR.md`: 30 X posts and weekly posting rhythm
+- `MARKETING_PLAN.md`: funnel, campaign URLs, operating rules
+- `REVIEW_OUTREACH.md`: review request copy for Amazon, X, LINE/email
+- `WEEKLY_GROWTH.md`: weekly scoreboard and A/B backlog
+- `promo-assets/kabukimono-x-card-01.png`: launch/problem visual
+- `promo-assets/kabukimono-x-card-02.png`: quote visual
+- `promo-assets/kabukimono-x-card-03.png`: review ask visual
 
 ## X Posts
 

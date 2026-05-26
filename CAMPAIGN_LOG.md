@@ -7,6 +7,9 @@
 | 2026-05-26 | LP share | reader_share | https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=reader_share | Active | Used by the LP share button. |
 | 2026-05-26 | LP | canonical_www | https://www.kabukimonostore.com | Active | Apex host redirects to `www` in-browser; static asset cache headers added. |
 | 2026-05-26 | Search | organic_foundation | https://www.kabukimonostore.com/sitemap.xml | Active | Sitemap, robots.txt, and Book structured data added. |
+| 2026-05-26 | X content | 30_post_calendar | https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=weekly_push | Ready | 30 post drafts and weekly cadence prepared. |
+| 2026-05-26 | Creative | promo_cards | promo-assets/ | Ready | Three 1200x675 campaign images generated for X/Instagram reuse. |
+| 2026-05-26 | LP SEO | strategy_section | https://www.kabukimonostore.com#strategy | Active | Added search-friendly positioning copy for company-worker and promotion intent. |
 
 ## Weekly Metrics
 

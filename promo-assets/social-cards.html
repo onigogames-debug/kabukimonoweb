@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KABUKIMONO Social Cards</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&family=Yuji+Syuku&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #050505;
+      color: #fff;
+      font-family: "Noto Sans JP", sans-serif;
+    }
+    .stage {
+      display: grid;
+      gap: 40px;
+      padding: 40px;
+    }
+    .card {
+      position: relative;
+      width: 1200px;
+      height: 675px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 18% 22%, rgba(255, 0, 51, 0.42), transparent 24%),
+        radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.22), transparent 28%),
+        linear-gradient(135deg, #070707 0%, #160606 48%, #0a0a0a 100%);
+      border: 1px solid rgba(212, 175, 55, 0.45);
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 38px;
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      pointer-events: none;
+    }
+    .card::after {
+      content: "KABUKIMONO-WEB";
+      position: absolute;
+      left: 56px;
+      bottom: 42px;
+      color: rgba(255, 255, 255, 0.34);
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 0.28em;
+    }
+    .content {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      align-items: center;
+      gap: 40px;
+      padding: 78px 78px 78px 92px;
+    }
+    .text {
+      position: relative;
+      z-index: 2;
+    }
+    .eyebrow {
+      color: #d4af37;
+      font-size: 24px;
+      font-weight: 900;
+      letter-spacing: 0.24em;
+      margin-bottom: 28px;
+    }
+    .headline {
+      font-family: "Yuji Syuku", serif;
+      font-size: 78px;
+      line-height: 1.18;
+      letter-spacing: 0;
+      margin: 0 0 26px;
+      text-shadow: 0 12px 36px rgba(0, 0, 0, 0.75);
+    }
+    .headline .red { color: #ff0033; }
+    .body {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.75;
+      margin: 0;
+    }
+    .url {
+      color: #d4af37;
+      font-size: 24px;
+      font-weight: 900;
+      margin-top: 30px;
+      letter-spacing: 0.08em;
+    }
+    .cover-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .cover {
+      width: 360px;
+      height: auto;
+      border: 1px solid rgba(212, 175, 55, 0.72);
+      box-shadow: 0 32px 72px rgba(0, 0, 0, 0.72), 0 0 45px rgba(212, 175, 55, 0.24);
+    }
+    .quote .content {
+      grid-template-columns: 1fr;
+      padding-right: 110px;
+    }
+    .quote .headline {
+      font-size: 94px;
+      max-width: 980px;
+    }
+    .review .headline {
+      font-size: 72px;
+    }
+    .review .body {
+      font-size: 26px;
+    }
+  </style>
+</head>
+<body>
+  <main class="stage">
+    <section class="card" id="card-01">
+      <div class="content">
+        <div class="text">
+          <div class="eyebrow">KINDLE BOOK</div>
+          <h1 class="headline">空気を読みながら、<br><span class="red">飲まれない。</span></h1>
+          <p class="body">普通の会社員が出世する<br>「かぶきもの思考」</p>
+          <div class="url">kabukimonostore.com</div>
+        </div>
+        <div class="cover-wrap">
+          <img class="cover" src="../book_cover.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="card quote" id="card-02">
+      <div class="content">
+        <div class="text">
+          <div class="eyebrow">QUOTE</div>
+          <h1 class="headline">目立たなくていい。<br><span class="red">でも、牙は研いでおけ。</span></h1>
+          <p class="body">『飄々と生きろ』KABUKIMONO-WEB</p>
+          <div class="url">kabukimonostore.com</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card review" id="card-03">
+      <div class="content">
+        <div class="text">
+          <div class="eyebrow">AFTER READING</div>
+          <h1 class="headline">心に残った一文を、<br><span class="red">次の読者へ。</span></h1>
+          <p class="body">AmazonレビューやXでの感想が、次の傾奇者に届く追い風になります。</p>
+          <div class="url">kabukimonostore.com</div>
+        </div>
+        <div class="cover-wrap">
+          <img class="cover" src="../book_cover.jpg" alt="">
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -12,6 +12,9 @@
 - Added reader-fit purchase prompts while preserving the current LP tone
 - Hardened LP initialization for restricted browsers and delayed script execution
 - Added CSS/JS version parameters so new launch fixes bypass edge cache immediately
+- Added a search-friendly LP strategy section for company-worker promotion intent
+- Added 30 X post drafts, review outreach copy, a weekly growth template, and a marketing plan
+- Added three 1200x675 campaign image assets under `promo-assets/`
 - Updated the LP share URL to use a dedicated reader-share campaign
 - Added Cloudflare Pages headers for static asset caching and baseline browser security
 - Preserved the original dark kabuki visual tone and vertical snap experience
