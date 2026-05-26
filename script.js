@@ -1,4 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const AMAZON_BASE_URL = 'https://www.amazon.co.jp/dp/B0GY8549WX';
+
+    function recordClick(eventName, href) {
+        const payload = {
+            event: eventName,
+            href,
+            path: window.location.pathname,
+            ts: new Date().toISOString()
+        };
+
+        try {
+            const key = 'kabukimono_clicks';
+            const current = JSON.parse(localStorage.getItem(key) || '[]');
+            current.push(payload);
+            localStorage.setItem(key, JSON.stringify(current.slice(-50)));
+        } catch (error) {
+            console.debug('Click log unavailable', error);
+        }
+
+        window.dispatchEvent(new CustomEvent('kabukimono:click', { detail: payload }));
+    }
+
+    document.querySelectorAll('[data-track]').forEach(link => {
+        link.addEventListener('click', () => {
+            recordClick(link.dataset.track, link.href);
+        });
+    });
+
     // Reveal animations on scroll
     const observerOptions = {
         threshold: 0.2
@@ -44,20 +72,34 @@ document.addEventListener('DOMContentLoaded', () => {
     const snapContainer = document.querySelector('.snap-container');
     const heroSection = document.querySelector('.hero');
 
-    snapContainer.addEventListener('scroll', () => {
+    function updateFloatingCta() {
         if (heroSection) {
             const heroHeight = heroSection.offsetHeight;
-            // When user scrolls past first page
-            if (snapContainer.scrollTop > heroHeight * 0.5) {
+            const visiblePrimaryCta = [...document.querySelectorAll('.page .btn-premium')]
+                .some(button => {
+                    const rect = button.getBoundingClientRect();
+                    return rect.top > 0 && rect.bottom < window.innerHeight - 16;
+                });
+
+            // Show only when the user has left the hero and no main CTA is already visible.
+            if (snapContainer.scrollTop > heroHeight * 0.5 && !visiblePrimaryCta) {
                 floatingCta.style.display = 'block';
             } else {
                 floatingCta.style.display = 'none';
             }
         }
-    });
+    }
+
+    snapContainer.addEventListener('scroll', updateFloatingCta);
+    updateFloatingCta();
 
     // Initial state for hero
     setTimeout(() => {
         if(heroSection) heroSection.classList.add('active');
     }, 100);
+
+    window.KABUKIMONO = {
+        amazonUrl: AMAZON_BASE_URL,
+        getClickLog: () => JSON.parse(localStorage.getItem('kabukimono_clicks') || '[]')
+    };
 });
