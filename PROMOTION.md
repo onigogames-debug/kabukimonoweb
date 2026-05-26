@@ -3,6 +3,7 @@
 ## Core URLs
 
 - LP: https://www.kabukimonostore.com
+- X campaign LP: https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=official_launch
 - Amazon KDP: https://www.amazon.co.jp/dp/B0GY8549WX
 - X: https://x.com/Kabukimono_biz
 
@@ -17,7 +18,7 @@
 空気を読みながら、飲まれない。
 目立たず、折れず、牙を研ぐ。
 
-https://www.kabukimonostore.com
+https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=official_launch
 
 #傾奇者 #KABUKIMONO #Kindle #AmazonKDP
 ```
@@ -32,7 +33,7 @@ https://www.kabukimonostore.com
 それでも自分の勝ち筋を静かに作る人だ。
 
 「かぶきもの思考」
-https://www.kabukimonostore.com
+https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=problem_post
 ```
 
 ### Review Ask
@@ -43,7 +44,7 @@ https://www.kabukimonostore.com
 
 次の傾奇者に届く、いちばん強い追い風になります。
 
-https://www.kabukimonostore.com
+https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=review_ask
 ```
 
 ## Instagram Caption
@@ -76,6 +77,5 @@ https://www.kabukimonostore.com
 
 組織の中で消耗せず、自分の軸を守りながら結果を出したい人へ。
 
-https://www.kabukimonostore.com
+https://www.kabukimonostore.com?utm_source=line_email&utm_medium=message&utm_campaign=official_launch
 ```
-

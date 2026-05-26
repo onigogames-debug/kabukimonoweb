@@ -12,6 +12,10 @@
   - `book_cta`
   - `review_cta`
   - `final_cta`
+- X posts should use campaign URLs:
+  - `utm_source=x`
+  - `utm_medium=social`
+  - `utm_campaign=official_launch`, `problem_post`, or `review_ask`
 - CTA clicks are stored locally in the browser for QA via:
 
 ```js
@@ -52,3 +56,11 @@ https://www.amazon.co.jp/dp/B0GY8549WX?tag=YOUR_TAG&utm_source=...
 - Thursday: レビュー依頼投稿
 - Friday: 反応の良い投稿を再利用して改善
 - Weekend: LPコピーを1箇所だけA/Bテスト
+
+## Launch Funnel Log
+
+Track weekly:
+
+```text
+Date | X post URL | Campaign | Impressions | Profile visits | LP clicks | Amazon clicks | Notes
+```
