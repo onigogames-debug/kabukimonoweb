@@ -10,6 +10,7 @@
 | 2026-05-26 | X content | 30_post_calendar | https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=weekly_push | Ready | 30 post drafts and weekly cadence prepared. |
 | 2026-05-26 | Creative | promo_cards | promo-assets/ | Ready | Three 1200x675 campaign images generated for X/Instagram reuse. |
 | 2026-05-26 | LP SEO | strategy_section | https://www.kabukimonostore.com#strategy | Active | Added search-friendly positioning copy for company-worker and promotion intent. |
+| 2026-05-26 | X | quote_post | https://x.com/Kabukimono_biz/status/2059268538758828534 | Posted | Day 1 of 7-day campaign; quote post with LP card preview. |
 
 ## Weekly Metrics
 

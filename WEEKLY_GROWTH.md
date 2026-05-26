@@ -4,7 +4,7 @@
 
 | Week | X posts | Best post | LP visits | Amazon clicks | Review clicks | Notes |
 | --- | ---: | --- | ---: | ---: | ---: | --- |
-| 2026-05-26 |  |  |  |  |  | Launch week |
+| 2026-05-26 | 1 | quote_post: 目立たなくていい。でも、牙は研いでおけ。 |  |  |  | Day 1 posted: https://x.com/Kabukimono_biz/status/2059268538758828534 |
 
 ## Monday
 
@@ -49,4 +49,3 @@
 | Hero CTA | Kindleで読む | かぶきもの思考を読む | Amazon clicks |
 | Hero copy | 普通の会社員が出世する、静かな反逆の思考法。 | 空気を読みながら、飲まれない。 | Scroll to book |
 | Review CTA | レビューを書く | 感想を一言残す | Review clicks |
-
