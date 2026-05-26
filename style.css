@@ -221,6 +221,24 @@ body {
   line-height: 1.7;
 }
 
+.reader-fit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: -0.5rem 0 1.8rem;
+}
+
+.reader-fit span {
+  color: var(--secondary);
+  border: 1px solid rgba(212, 175, 55, 0.42);
+  background: rgba(212, 175, 55, 0.08);
+  padding: 0.45rem 0.7rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+
 .review-section {
   background:
     linear-gradient(rgba(10, 10, 10, 0.88), rgba(10, 10, 10, 0.96)),
@@ -364,6 +382,9 @@ body {
   .benefit-list {
     text-align: left;
   }
+  .reader-fit {
+    justify-content: center;
+  }
   .book-cover {
     width: min(210px, 58vw);
   }
@@ -382,5 +403,20 @@ body {
   .btn-ghost,
   .btn-floating {
     font-size: 0.85rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html,
+  .snap-container {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
   }
 }

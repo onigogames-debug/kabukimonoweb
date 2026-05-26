@@ -5,6 +5,8 @@
 - LP: https://www.kabukimonostore.com
 - X campaign LP: https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=official_launch
 - Reader share LP: https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=reader_share
+- Problem post LP: https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=problem_post
+- Review ask LP: https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=review_ask
 - Amazon KDP: https://www.amazon.co.jp/dp/B0GY8549WX
 - X: https://x.com/Kabukimono_biz
 

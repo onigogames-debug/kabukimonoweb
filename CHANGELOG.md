@@ -7,6 +7,11 @@
 - Added a dedicated 1200x630 OG image for X/social cards
 - Added campaign URL variants and a campaign log for weekly tracking
 - Added apex-to-www canonical redirect and session landing-source logging
+- Added sitemap, robots.txt, and Book structured data for search discovery
+- Added landing-source carryover parameters to Amazon outbound links
+- Added reader-fit purchase prompts while preserving the current LP tone
+- Hardened LP initialization for restricted browsers and delayed script execution
+- Added CSS/JS version parameters so new launch fixes bypass edge cache immediately
 - Updated the LP share URL to use a dedicated reader-share campaign
 - Added Cloudflare Pages headers for static asset caching and baseline browser security
 - Preserved the original dark kabuki visual tone and vertical snap experience

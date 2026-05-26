@@ -7,12 +7,21 @@
 - Custom domain active: `https://www.kabukimonostore.com`
 - Apex domain now serves the site and is redirected to `www` in the browser for canonical consistency.
 - Static asset cache headers are configured in `_headers`.
+- Search discovery files:
+  - `https://www.kabukimonostore.com/sitemap.xml`
+  - `https://www.kabukimonostore.com/robots.txt`
+- The LP includes Book structured data for the Kindle title.
 - Amazon links include UTM parameters by placement:
   - `hero_cta`
   - `floating_cta`
   - `book_cta`
   - `review_cta`
   - `final_cta`
+- Amazon outbound links also append landing-source carryover parameters:
+  - `lp_source`
+  - `lp_medium`
+  - `lp_campaign`
+  - `lp_path`
 - X posts should use campaign URLs:
   - `utm_source=x`
   - `utm_medium=social`
