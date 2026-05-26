@@ -5,7 +5,8 @@
 - Cloudflare Web Analytics: enable from Cloudflare dashboard and paste the token script before `</body>` if needed.
 - Current public URL: `https://www.kabukimonostore.com`
 - Custom domain active: `https://www.kabukimonostore.com`
-- Apex domain handling remains pending: `https://kabukimonostore.com`
+- Apex domain now serves the site and is redirected to `www` in the browser for canonical consistency.
+- Static asset cache headers are configured in `_headers`.
 - Amazon links include UTM parameters by placement:
   - `hero_cta`
   - `floating_cta`
@@ -20,6 +21,12 @@
 
 ```js
 window.KABUKIMONO.getClickLog()
+```
+
+- Landing source is stored per browser session for QA via:
+
+```js
+window.KABUKIMONO.getLanding()
 ```
 
 ## Amazon Associate

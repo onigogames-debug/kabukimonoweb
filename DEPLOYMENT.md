@@ -5,8 +5,8 @@ This site is published on Cloudflare Pages.
 ## Production
 
 - URL: https://www.kabukimonostore.com
-- Fallback URL: https://www.kabukimonostore.com
-- Apex domain in progress: https://kabukimonostore.com
+- Canonical URL: https://www.kabukimonostore.com
+- Apex URL: https://kabukimonostore.com
 - Project: `kabukimonoweb`
 - Build output directory: repository root (`.`)
 
@@ -24,9 +24,11 @@ Cloudflare DNS setup was completed on 2026-05-26:
 - `kabukimonostore.com` CNAME -> `kabukimonoweb.pages.dev`
 - `www.kabukimonostore.com` CNAME -> `kabukimonoweb.pages.dev`
 
-Remaining activation step:
+Completed activation:
 
-- Completed: Onamae.com nameservers changed to `ursula.ns.cloudflare.com` and `wesley.ns.cloudflare.com`
+- Onamae.com nameservers changed to `ursula.ns.cloudflare.com` and `wesley.ns.cloudflare.com`
+- Cloudflare Pages serves both apex and `www`.
+- The browser canonical redirect sends apex visitors to `www`.
 
 DNS propagation can take up to 72 hours.
 
@@ -34,7 +36,7 @@ Initial verification:
 
 - Cloudflare zone status: active
 - Cloudflare Pages: `www.kabukimonostore.com` is active
-- Cloudflare Pages: `kabukimonostore.com` is pending apex verification
+- Cloudflare Pages: `kabukimonostore.com` serves the site
 
 ## Deploy
 

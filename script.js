@@ -1,11 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
     const AMAZON_BASE_URL = 'https://www.amazon.co.jp/dp/B0GY8549WX';
+    const landingParams = new URLSearchParams(window.location.search);
+    const landing = {
+        source: landingParams.get('utm_source') || 'direct',
+        medium: landingParams.get('utm_medium') || '',
+        campaign: landingParams.get('utm_campaign') || '',
+        referrer: document.referrer || '',
+        path: window.location.pathname,
+        ts: new Date().toISOString()
+    };
+
+    try {
+        sessionStorage.setItem('kabukimono_landing', JSON.stringify(landing));
+    } catch (error) {
+        console.debug('Landing source unavailable', error);
+    }
 
     function recordClick(eventName, href) {
+        let storedLanding = landing;
+        try {
+            storedLanding = JSON.parse(sessionStorage.getItem('kabukimono_landing') || 'null') || landing;
+        } catch (error) {
+            console.debug('Landing source read unavailable', error);
+        }
+
         const payload = {
             event: eventName,
             href,
             path: window.location.pathname,
+            landing: storedLanding,
             ts: new Date().toISOString()
         };
 
@@ -100,6 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.KABUKIMONO = {
         amazonUrl: AMAZON_BASE_URL,
+        getLanding: () => JSON.parse(sessionStorage.getItem('kabukimono_landing') || 'null'),
         getClickLog: () => JSON.parse(localStorage.getItem('kabukimono_clicks') || '[]')
     };
 });

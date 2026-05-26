@@ -43,11 +43,11 @@ Completed on 2026-05-26:
 - Cloudflare zone status is active.
 - Cloudflare Pages status:
   - `www.kabukimonostore.com`: active
-  - `kabukimonostore.com`: pending apex verification
+  - `kabukimonostore.com`: serves the site
 
 Propagation note:
 
-Onamae.com shows that nameserver changes can take up to 72 hours. The live custom-domain URL is `https://www.kabukimonostore.com`.
+Onamae.com shows that nameserver changes can take up to 72 hours. The live canonical custom-domain URL is `https://www.kabukimonostore.com`.
 
 ## Apex Domain Note
 
@@ -81,34 +81,15 @@ Target: kabukimonoweb.pages.dev
 Proxy: Proxied
 ```
 
-## After Domain Is Active
+## Active Canonical URL
 
-When the preferred custom domain is active, update site metadata from:
-
-```text
-https://www.kabukimonostore.com
-```
-
-to either:
-
-```text
-https://kabukimonostore.com
-```
-
-or:
+Use this URL in X, Instagram, email, LINE, and Amazon KDP promotion:
 
 ```text
 https://www.kabukimonostore.com
 ```
 
-Files to update:
-
-- `index.html`
-- `PROMOTION.md`
-- `OPERATIONS.md`
-- `DEPLOYMENT.md`
-
-Also update Amazon UTM links:
+Amazon UTM source:
 
 ```text
 utm_source=kabukimonostore.com
