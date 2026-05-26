@@ -3,6 +3,7 @@
 ## Measurement
 
 - Cloudflare Web Analytics: enable from Cloudflare dashboard and paste the token script before `</body>` if needed.
+- Planned official domain: `kabukimonostore.com`
 - Amazon links include UTM parameters by placement:
   - `hero_cta`
   - `floating_cta`
@@ -49,4 +50,3 @@ https://www.amazon.co.jp/dp/B0GY8549WX?tag=YOUR_TAG&utm_source=...
 - Thursday: レビュー依頼投稿
 - Friday: 反応の良い投稿を再利用して改善
 - Weekend: LPコピーを1箇所だけA/Bテスト
-
