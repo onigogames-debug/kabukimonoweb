@@ -5,9 +5,19 @@ This site is published on Cloudflare Pages.
 ## Production
 
 - URL: https://kabukimonoweb.pages.dev
-- Planned custom domain: https://kabukimonostore.com
+- Custom domain in progress: https://www.kabukimonostore.com
+- Apex domain in progress: https://kabukimonostore.com
 - Project: `kabukimonoweb`
 - Build output directory: repository root (`.`)
+
+## Domain Status
+
+Onamae.com DNS setup was submitted on 2026-05-26:
+
+- `www.kabukimonostore.com` CNAME -> `kabukimonoweb.pages.dev`
+- Nameserver change -> `01.dnsv.jp`, `02.dnsv.jp`, `03.dnsv.jp`, `04.dnsv.jp`
+
+DNS propagation can take up to 72 hours.
 
 ## Deploy
 
