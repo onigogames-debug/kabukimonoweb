@@ -34,7 +34,7 @@ Completed on 2026-05-26:
 
 Propagation note:
 
-Onamae.com shows that nameserver changes can take up to 72 hours.
+Onamae.com shows that nameserver changes can take up to 72 hours. As of the initial setup, `www.kabukimonostore.com` resolves as a CNAME to `kabukimonoweb.pages.dev`, while Cloudflare Pages still reports the custom domains as pending verification.
 
 ## Apex Domain Note
 

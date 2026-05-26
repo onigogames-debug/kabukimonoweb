@@ -19,6 +19,11 @@ Onamae.com DNS setup was submitted on 2026-05-26:
 
 DNS propagation can take up to 72 hours.
 
+Initial verification:
+
+- DNS: `www.kabukimonostore.com` resolves to `kabukimonoweb.pages.dev`
+- Cloudflare Pages: custom domain verification is pending
+
 ## Deploy
 
 ```bash
