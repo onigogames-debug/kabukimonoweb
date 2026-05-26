@@ -5,7 +5,7 @@ Domain: `kabukimonostore.com`
 Current Cloudflare Pages URL:
 
 ```text
-https://kabukimonoweb.pages.dev
+https://www.kabukimonostore.com
 ```
 
 Target production URLs:
@@ -37,10 +37,17 @@ Completed on 2026-05-26:
   - `02.dnsv.jp`
   - `03.dnsv.jp`
   - `04.dnsv.jp`
+- Onamae.com nameservers were changed to Cloudflare:
+  - `ursula.ns.cloudflare.com`
+  - `wesley.ns.cloudflare.com`
+- Cloudflare zone status is active.
+- Cloudflare Pages status:
+  - `www.kabukimonostore.com`: active
+  - `kabukimonostore.com`: pending apex verification
 
 Propagation note:
 
-Onamae.com shows that nameserver changes can take up to 72 hours. Cloudflare DNS is ready. The remaining activation step is to update the registrar nameservers at Onamae.com from `01.dnsv.jp` / `02.dnsv.jp` / `03.dnsv.jp` / `04.dnsv.jp` to `ursula.ns.cloudflare.com` / `wesley.ns.cloudflare.com`.
+Onamae.com shows that nameserver changes can take up to 72 hours. The live custom-domain URL is `https://www.kabukimonostore.com`.
 
 ## Apex Domain Note
 
@@ -79,7 +86,7 @@ Proxy: Proxied
 When the preferred custom domain is active, update site metadata from:
 
 ```text
-https://kabukimonoweb.pages.dev
+https://www.kabukimonostore.com
 ```
 
 to either:

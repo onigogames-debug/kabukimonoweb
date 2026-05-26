@@ -2,7 +2,7 @@
 
 ## 2026-05-26
 
-- Cloudflare Pages production URL set to https://kabukimonoweb.pages.dev
+- Cloudflare Pages production URL set to https://www.kabukimonostore.com
 - Preserved the original dark kabuki visual tone and vertical snap experience
 - Added clearer hero copy and secondary navigation CTA
 - Added Amazon KDP purchase section with book cover and benefits

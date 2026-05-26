@@ -3,8 +3,8 @@
 ## Measurement
 
 - Cloudflare Web Analytics: enable from Cloudflare dashboard and paste the token script before `</body>` if needed.
-- Current public URL: `https://kabukimonoweb.pages.dev`
-- Custom domain propagation in progress: `https://www.kabukimonostore.com`
+- Current public URL: `https://www.kabukimonostore.com`
+- Custom domain active: `https://www.kabukimonostore.com`
 - Apex domain handling remains pending: `https://kabukimonostore.com`
 - Amazon links include UTM parameters by placement:
   - `hero_cta`

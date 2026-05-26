@@ -4,8 +4,8 @@ This site is published on Cloudflare Pages.
 
 ## Production
 
-- URL: https://kabukimonoweb.pages.dev
-- Custom domain in progress: https://www.kabukimonostore.com
+- URL: https://www.kabukimonostore.com
+- Fallback URL: https://www.kabukimonostore.com
 - Apex domain in progress: https://kabukimonostore.com
 - Project: `kabukimonoweb`
 - Build output directory: repository root (`.`)
@@ -26,14 +26,15 @@ Cloudflare DNS setup was completed on 2026-05-26:
 
 Remaining activation step:
 
-- Change Onamae.com nameservers to `ursula.ns.cloudflare.com` and `wesley.ns.cloudflare.com`
+- Completed: Onamae.com nameservers changed to `ursula.ns.cloudflare.com` and `wesley.ns.cloudflare.com`
 
 DNS propagation can take up to 72 hours.
 
 Initial verification:
 
-- DNS: `www.kabukimonostore.com` resolves to `kabukimonoweb.pages.dev`
-- Cloudflare Pages: custom domain verification is pending
+- Cloudflare zone status: active
+- Cloudflare Pages: `www.kabukimonostore.com` is active
+- Cloudflare Pages: `kabukimonostore.com` is pending apex verification
 
 ## Deploy
 

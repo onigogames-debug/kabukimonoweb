@@ -2,7 +2,7 @@
 
 ## Core URLs
 
-- LP: https://kabukimonoweb.pages.dev
+- LP: https://www.kabukimonostore.com
 - Amazon KDP: https://www.amazon.co.jp/dp/B0GY8549WX
 - X: https://x.com/Kabukimono_biz
 
@@ -17,7 +17,7 @@
 空気を読みながら、飲まれない。
 目立たず、折れず、牙を研ぐ。
 
-https://kabukimonoweb.pages.dev
+https://www.kabukimonostore.com
 
 #傾奇者 #KABUKIMONO #Kindle #AmazonKDP
 ```
@@ -32,7 +32,7 @@ https://kabukimonoweb.pages.dev
 それでも自分の勝ち筋を静かに作る人だ。
 
 「かぶきもの思考」
-https://kabukimonoweb.pages.dev
+https://www.kabukimonostore.com
 ```
 
 ### Review Ask
@@ -43,7 +43,7 @@ https://kabukimonoweb.pages.dev
 
 次の傾奇者に届く、いちばん強い追い風になります。
 
-https://kabukimonoweb.pages.dev
+https://www.kabukimonostore.com
 ```
 
 ## Instagram Caption
@@ -76,6 +76,6 @@ https://kabukimonoweb.pages.dev
 
 組織の中で消耗せず、自分の軸を守りながら結果を出したい人へ。
 
-https://kabukimonoweb.pages.dev
+https://www.kabukimonostore.com
 ```
 
