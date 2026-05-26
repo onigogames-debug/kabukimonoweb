@@ -22,6 +22,12 @@ Completed on 2026-05-26:
 - Cloudflare Pages custom domains were added:
   - `kabukimonostore.com`
   - `www.kabukimonostore.com`
+- Cloudflare DNS zone was added on the Free plan:
+  - `kabukimonostore.com`
+  - assigned nameservers: `ursula.ns.cloudflare.com`, `wesley.ns.cloudflare.com`
+- Cloudflare DNS records were reset and rebuilt for Pages:
+  - `kabukimonostore.com` CNAME -> `kabukimonoweb.pages.dev`
+  - `www.kabukimonostore.com` CNAME -> `kabukimonoweb.pages.dev`
 - Onamae.com DNS record setup was submitted:
   - `www.kabukimonostore.com`
   - `CNAME`
@@ -34,7 +40,7 @@ Completed on 2026-05-26:
 
 Propagation note:
 
-Onamae.com shows that nameserver changes can take up to 72 hours. As of the initial setup, `www.kabukimonostore.com` resolves as a CNAME to `kabukimonoweb.pages.dev`, while Cloudflare Pages still reports the custom domains as pending verification.
+Onamae.com shows that nameserver changes can take up to 72 hours. Cloudflare DNS is ready. The remaining activation step is to update the registrar nameservers at Onamae.com from `01.dnsv.jp` / `02.dnsv.jp` / `03.dnsv.jp` / `04.dnsv.jp` to `ursula.ns.cloudflare.com` / `wesley.ns.cloudflare.com`.
 
 ## Apex Domain Note
 
@@ -42,28 +48,17 @@ Onamae.com DNS accepted the `www` CNAME record. It did not accept a blank-host C
 
 Onamae.com URL forwarding appears to require a DNS additional option application. Do not enable that option unless the cost and need are confirmed.
 
-The clean free path for the apex domain is still Cloudflare DNS:
+The clean free path for the apex domain is Cloudflare DNS:
 
-1. Add `kabukimonostore.com` as a Cloudflare zone.
-2. Cloudflare will show two assigned nameservers.
-3. In Onamae.com, change the domain nameservers to those Cloudflare nameservers.
-4. In Cloudflare DNS, point:
-   - `kabukimonostore.com` to Pages
-   - `www.kabukimonostore.com` to Pages or redirect to apex
-5. Confirm Cloudflare Pages SSL status becomes active.
+1. In Onamae.com, change the domain nameservers to:
+   - `ursula.ns.cloudflare.com`
+   - `wesley.ns.cloudflare.com`
+2. Wait for Cloudflare zone activation.
+3. Confirm Cloudflare Pages SSL status becomes active.
 
 ## DNS Records
 
-Current Onamae.com DNS record:
-
-```text
-Type: CNAME
-Name: www
-Target: kabukimonoweb.pages.dev
-TTL: 3600
-```
-
-If the domain is moved to Cloudflare DNS, use:
+Current Cloudflare DNS records:
 
 ```text
 Type: CNAME
@@ -75,11 +70,9 @@ Proxy: Proxied
 ```text
 Type: CNAME
 Name: www
-Target: kabukimonostore.com
+Target: kabukimonoweb.pages.dev
 Proxy: Proxied
 ```
-
-Cloudflare may create these automatically when adding the custom domain to Pages.
 
 ## After Domain Is Active
 
