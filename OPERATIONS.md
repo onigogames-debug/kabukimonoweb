@@ -7,6 +7,11 @@
 - Custom domain active: `https://www.kabukimonostore.com`
 - Apex domain now serves the site and is redirected to `www` in the browser for canonical consistency.
 - Static asset cache headers are configured in `_headers`.
+- Google Search Console:
+  - Account: `kabukimono.business42@gmail.com`
+  - Property: `https://www.kabukimonostore.com/`
+  - Verification: HTML tag
+  - Sitemap: `/sitemap.xml` submitted successfully on 2026-05-27
 - Search discovery files:
   - `https://www.kabukimonostore.com/sitemap.xml`
   - `https://www.kabukimonostore.com/robots.txt`
