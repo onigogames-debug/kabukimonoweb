@@ -18,6 +18,7 @@
 - Added three SEO article pages, a public press kit, RSS feed, and llms.txt for non-X discovery
 - Added two 1080x1080 square campaign images for Instagram/LINE reuse
 - Added KDP promotion kit with A+ Content assets, description, keywords, and Amazon Ads setup
+- Submitted updated KDP book description and seven search keywords for review
 - Updated the LP share URL to use a dedicated reader-share campaign
 - Added Cloudflare Pages headers for static asset caching and baseline browser security
 - Preserved the original dark kabuki visual tone and vertical snap experience
