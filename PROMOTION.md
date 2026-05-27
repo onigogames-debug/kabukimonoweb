@@ -21,6 +21,10 @@
 - `promo-assets/kabukimono-x-card-01.png`: launch/problem visual
 - `promo-assets/kabukimono-x-card-02.png`: quote visual
 - `promo-assets/kabukimono-x-card-03.png`: review ask visual
+- `promo-assets/kabukimono-instagram-01.png`: Instagram/LINE square visual
+- `promo-assets/kabukimono-instagram-02.png`: Instagram/LINE quote square visual
+- `press-kit.html`: public press kit for blog, newsletter, LINE, and direct sharing
+- `feed.xml`: RSS feed for site updates
 
 ## X Posts
 

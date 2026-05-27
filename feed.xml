@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>KABUKIMONO-WEB</title>
+    <link>https://www.kabukimonostore.com/</link>
+    <description>普通の会社員が出世する「かぶきもの思考」。</description>
+    <language>ja</language>
+    <lastBuildDate>Wed, 27 May 2026 00:00:00 +0900</lastBuildDate>
+    <item>
+      <title>かぶきもの思考とは</title>
+      <link>https://www.kabukimonostore.com/articles/kabukimono-thinking</link>
+      <guid>https://www.kabukimonostore.com/articles/kabukimono-thinking</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0900</pubDate>
+      <description>会社員が組織の空気を読みながらも飲まれず、自分の軸を守って結果を出すための考え方。</description>
+    </item>
+    <item>
+      <title>普通の会社員が出世するために必要なこと</title>
+      <link>https://www.kabukimonostore.com/articles/company-worker-promotion</link>
+      <guid>https://www.kabukimonostore.com/articles/company-worker-promotion</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0900</pubDate>
+      <description>目立つ前に信頼、距離感、勝負所を整える会社員の思考法。</description>
+    </item>
+    <item>
+      <title>組織で消耗しない働き方</title>
+      <link>https://www.kabukimonostore.com/articles/work-without-burnout</link>
+      <guid>https://www.kabukimonostore.com/articles/work-without-burnout</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0900</pubDate>
+      <description>空気を読みながら、飲まれない。会社員のための静かな仕事術。</description>
+    </item>
+    <item>
+      <title>KABUKIMONO-WEB プレスキット</title>
+      <link>https://www.kabukimonostore.com/press-kit</link>
+      <guid>https://www.kabukimonostore.com/press-kit</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0900</pubDate>
+      <description>『飄々と生きろ』の紹介文、書影、告知画像、掲載用コピー。</description>
+    </item>
+  </channel>
+</rss>

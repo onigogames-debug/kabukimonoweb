@@ -91,6 +91,7 @@ function initKabukimonoLp() {
         document.querySelector('.hero'),
         document.querySelector('.content-split'),
         document.querySelector('.strategy-section'),
+        document.querySelector('.resources-section'),
         document.querySelector('.footer-wrap')
     ];
 

@@ -12,6 +12,20 @@ Amazon KDP販売促進のため、XからLPへ流入させ、LPからAmazon購�
 4. 読後にレビューとX共有を促進
 5. 反応の良い言葉を次週の投稿とLPへ反映
 
+## Non-X Awareness Channels
+
+1. Organic search
+   - `articles/kabukimono-thinking.html`
+   - `articles/company-worker-promotion.html`
+   - `articles/work-without-burnout.html`
+2. Direct sharing / referral
+   - `press-kit.html`
+   - `promo-assets/kabukimono-instagram-01.png`
+   - `promo-assets/kabukimono-instagram-02.png`
+3. Feed discovery
+   - `feed.xml`
+   - `llms.txt`
+
 ## Immediate Campaigns
 
 | Campaign | Purpose | URL |
@@ -27,6 +41,8 @@ Amazon KDP販売促進のため、XからLPへ流入させ、LPからAmazon購�
 - `promo-assets/kabukimono-x-card-01.png`: problem/launch
 - `promo-assets/kabukimono-x-card-02.png`: quote
 - `promo-assets/kabukimono-x-card-03.png`: review ask
+- `promo-assets/kabukimono-instagram-01.png`: square launch
+- `promo-assets/kabukimono-instagram-02.png`: square quote
 
 ## Weekly Operating Rule
 

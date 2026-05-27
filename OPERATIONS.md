@@ -10,7 +10,15 @@
 - Search discovery files:
   - `https://www.kabukimonostore.com/sitemap.xml`
   - `https://www.kabukimonostore.com/robots.txt`
+  - `https://www.kabukimonostore.com/feed.xml`
+  - `https://www.kabukimonostore.com/llms.txt`
 - The LP includes Book structured data for the Kindle title.
+- Organic discovery pages:
+  - `https://www.kabukimonostore.com/articles/kabukimono-thinking`
+  - `https://www.kabukimonostore.com/articles/company-worker-promotion`
+  - `https://www.kabukimonostore.com/articles/work-without-burnout`
+- Referral/share page:
+  - `https://www.kabukimonostore.com/press-kit`
 - Amazon links include UTM parameters by placement:
   - `hero_cta`
   - `floating_cta`
@@ -45,6 +53,7 @@ window.KABUKIMONO.getLanding()
 - Use `WEEKLY_GROWTH.md` every Friday or weekend to record numbers.
 - Use `REVIEW_OUTREACH.md` for review asks; keep review asks to a controlled cadence.
 - Use `promo-assets/` images for X and Instagram posts.
+- Use `press-kit.html` for blog, LINE, newsletter, and direct sharing outreach.
 
 ## Amazon Associate
 
