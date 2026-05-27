@@ -64,12 +64,19 @@ window.KABUKIMONO.getLanding()
 ## KDP Update Checklist
 
 - Add A+ Content on Amazon.co.jp with assets in `kdp-assets/`.
+- A+ Content draft started on 2026-05-27 as `KABUKIMONO-WEB_飄々と生きろ_Aplus_20260527`; image upload needs Chrome extension file access before submission.
 - KDP book description updated from `KDP_PROMOTION_KIT.md` on 2026-05-27.
 - Seven recommended keyword fields submitted on 2026-05-27.
 - Confirm book categories are still relevant.
 - Current KDP status after submission: `販売中 変更事項のレビュー中`.
 - If KDP Select is enabled, schedule a two-day Free Book Promotion only after LP and social announcements are ready.
 - If starting Amazon Ads, begin with 500 yen/day automatic targeting for 7 days.
+
+## A+ Content Resume Notes
+
+- Resume the open KDP A+ editor tab after enabling Chrome extension file upload access.
+- Upload `kdp-assets/aplus-01-hero.png` to the first `テキスト付き標準画像ヘッダー` module.
+- Use `KDP_APLUS_HANDOFF.md` for the exact module text, alt text, and resume sequence.
 
 ## Amazon Associate
 

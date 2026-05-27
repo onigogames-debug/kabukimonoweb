@@ -17,6 +17,7 @@
 | 2026-05-27 | Feed | rss_llms | https://www.kabukimonostore.com/feed.xml | Active | RSS feed and llms.txt added for update discovery. |
 | 2026-05-27 | Amazon KDP | aplus_content_kit | KDP_PROMOTION_KIT.md | Ready | A+ Content text, assets, KDP description, keywords, category candidates, and ad setup prepared. |
 | 2026-05-27 | Amazon KDP | kdp_detail_keywords_update | https://www.amazon.co.jp/dp/B0GY8549WX | Submitted | Updated KDP book description and seven search keywords; status changed to `販売中 変更事項のレビュー中`. |
+| 2026-05-27 | Amazon KDP | aplus_content_creation | KDP_APLUS_HANDOFF.md | Blocked | A+ Content draft was started and text was entered, but Chrome extension file-upload permission blocked image upload. |
 
 ## Weekly Metrics
 
