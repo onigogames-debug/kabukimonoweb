@@ -18,6 +18,7 @@
 | 2026-05-27 | Amazon KDP | aplus_content_kit | KDP_PROMOTION_KIT.md | Ready | A+ Content text, assets, KDP description, keywords, category candidates, and ad setup prepared. |
 | 2026-05-27 | Amazon KDP | kdp_detail_keywords_update | https://www.amazon.co.jp/dp/B0GY8549WX | Submitted | Updated KDP book description and seven search keywords; status changed to `販売中 変更事項のレビュー中`. |
 | 2026-05-27 | Amazon KDP | aplus_content_creation | https://kdp.amazon.co.jp/aplus/content-manager | Submitted | Text-first A+ Content submitted for ASIN `B0GY8549WX`; hero asset was uploaded to the KDP asset library but omitted from the submitted module due KDP alt-text validation instability. |
+| 2026-05-27 | X | day2_problem_post | https://www.kabukimonostore.com?utm_source=x&utm_medium=social&utm_campaign=problem_post | Posted, URL pending | Posted calendar item 3 with `promo-assets/kabukimono-x-card-02.png`; X profile reload timed out before the status URL could be captured. |
 
 ## Weekly Metrics
 
