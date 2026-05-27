@@ -20,6 +20,7 @@
 - Added KDP promotion kit with A+ Content assets, description, keywords, and Amazon Ads setup
 - Submitted updated KDP book description and seven search keywords for review
 - Started the KDP A+ Content draft and documented the file-upload permission handoff
+- Submitted a text-first KDP A+ Content version for ASIN `B0GY8549WX`
 - Updated the LP share URL to use a dedicated reader-share campaign
 - Added Cloudflare Pages headers for static asset caching and baseline browser security
 - Preserved the original dark kabuki visual tone and vertical snap experience
