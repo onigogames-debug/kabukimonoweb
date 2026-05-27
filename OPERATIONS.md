@@ -54,6 +54,21 @@ window.KABUKIMONO.getLanding()
 - Use `REVIEW_OUTREACH.md` for review asks; keep review asks to a controlled cadence.
 - Use `promo-assets/` images for X and Instagram posts.
 - Use `press-kit.html` for blog, LINE, newsletter, and direct sharing outreach.
+- Use `KDP_PROMOTION_KIT.md` when updating Amazon KDP:
+  - A+ Content project
+  - Book description
+  - Search keywords
+  - Category candidates
+  - Sponsored Products starter campaigns
+
+## KDP Update Checklist
+
+- Add A+ Content on Amazon.co.jp with assets in `kdp-assets/`.
+- Update KDP book description using the HTML version in `KDP_PROMOTION_KIT.md`.
+- Set the seven recommended keyword fields.
+- Confirm book categories are still relevant.
+- If KDP Select is enabled, schedule a two-day Free Book Promotion only after LP and social announcements are ready.
+- If starting Amazon Ads, begin with 500 yen/day automatic targeting for 7 days.
 
 ## Amazon Associate
 

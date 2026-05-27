@@ -25,6 +25,8 @@
 - `promo-assets/kabukimono-instagram-02.png`: Instagram/LINE quote square visual
 - `press-kit.html`: public press kit for blog, newsletter, LINE, and direct sharing
 - `feed.xml`: RSS feed for site updates
+- `KDP_PROMOTION_KIT.md`: A+ Content, KDP description, keywords, category, and Amazon Ads setup
+- `kdp-assets/`: A+ Content image assets for Amazon.co.jp
 
 ## X Posts
 

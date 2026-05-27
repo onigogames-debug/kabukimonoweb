@@ -15,6 +15,7 @@
 | 2026-05-27 | Referral | press_kit | https://www.kabukimonostore.com/press-kit | Active | Public press kit added for blog, newsletter, LINE, and direct sharing. |
 | 2026-05-27 | Creative | instagram_square_assets | https://www.kabukimonostore.com/promo-assets/kabukimono-instagram-01.png | Ready | Two 1080x1080 square assets generated for Instagram/LINE use. |
 | 2026-05-27 | Feed | rss_llms | https://www.kabukimonostore.com/feed.xml | Active | RSS feed and llms.txt added for update discovery. |
+| 2026-05-27 | Amazon KDP | aplus_content_kit | KDP_PROMOTION_KIT.md | Ready | A+ Content text, assets, KDP description, keywords, category candidates, and ad setup prepared. |
 
 ## Weekly Metrics
 

@@ -26,6 +26,19 @@ Amazon KDP販売促進のため、XからLPへ流入させ、LPからAmazon購�
    - `feed.xml`
    - `llms.txt`
 
+## Amazon-Side Promotion
+
+1. Improve Amazon detail page conversion
+   - Add A+ Content using `KDP_PROMOTION_KIT.md`
+   - Replace or refine KDP book description
+   - Add seven focused search keywords
+2. Increase Amazon discovery
+   - Confirm categories in KDP
+   - Start low-budget Sponsored Products testing
+3. Use KDP Select only if exclusivity is acceptable
+   - Consider a two-day Free Book Promotion
+   - Avoid review incentives and ranking-manipulation services
+
 ## Immediate Campaigns
 
 | Campaign | Purpose | URL |

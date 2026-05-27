@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KDP A+ Assets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700;900&family=Yuji+Syuku&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #050505;
+      color: #fff;
+      font-family: "Noto Sans JP", sans-serif;
+    }
+    .stage {
+      display: grid;
+      gap: 40px;
+      padding: 40px;
+    }
+    .asset {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 18% 20%, rgba(255, 0, 51, 0.36), transparent 28%),
+        radial-gradient(circle at 82% 78%, rgba(212, 175, 55, 0.22), transparent 30%),
+        linear-gradient(135deg, #070707 0%, #160606 54%, #080808 100%);
+      border: 1px solid rgba(212, 175, 55, 0.46);
+    }
+    .asset::before {
+      content: "";
+      position: absolute;
+      inset: 32px;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      pointer-events: none;
+    }
+    .wide {
+      width: 970px;
+      height: 600px;
+      display: grid;
+      grid-template-columns: 1.12fr 0.88fr;
+      align-items: center;
+      gap: 26px;
+      padding: 72px;
+    }
+    .square {
+      width: 600px;
+      height: 600px;
+      padding: 58px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .banner {
+      width: 970px;
+      height: 300px;
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      align-items: center;
+      padding: 42px 62px;
+      gap: 36px;
+    }
+    .eyebrow {
+      position: relative;
+      color: #d4af37;
+      font-size: 18px;
+      font-weight: 900;
+      letter-spacing: 0.22em;
+      margin: 0 0 18px;
+    }
+    h1, h2 {
+      position: relative;
+      font-family: "Yuji Syuku", serif;
+      letter-spacing: 0;
+      line-height: 1.18;
+      margin: 0;
+      text-shadow: 0 16px 36px rgba(0, 0, 0, 0.72);
+    }
+    h1 {
+      font-size: 68px;
+    }
+    h2 {
+      font-size: 55px;
+    }
+    .square h2 {
+      font-size: 62px;
+    }
+    .red { color: #ff0033; }
+    .body {
+      position: relative;
+      color: rgba(255,255,255,0.84);
+      font-size: 23px;
+      font-weight: 700;
+      line-height: 1.65;
+      margin: 24px 0 0;
+    }
+    .small {
+      color: rgba(255,255,255,0.76);
+      font-size: 20px;
+      line-height: 1.65;
+      font-weight: 700;
+      position: relative;
+    }
+    .cover {
+      width: 292px;
+      border: 1px solid rgba(212, 175, 55, 0.78);
+      box-shadow: 0 28px 62px rgba(0,0,0,0.72), 0 0 42px rgba(212,175,55,0.18);
+      position: relative;
+      justify-self: center;
+    }
+    .mark {
+      position: relative;
+      color: rgba(212, 175, 55, 0.95);
+      font-size: 19px;
+      font-weight: 900;
+      letter-spacing: 0.2em;
+    }
+    .icon-line {
+      width: 70px;
+      height: 6px;
+      background: #ff0033;
+      margin-bottom: 28px;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <main class="stage">
+    <section class="asset wide" id="aplus-01">
+      <div>
+        <p class="eyebrow">KABUKIMONO THINKING</p>
+        <h1>空気を読みながら、<br><span class="red">飲まれない。</span></h1>
+        <p class="body">普通の会社員が、組織の中で自分の軸を失わずに進むための思考法。</p>
+      </div>
+      <img class="cover" src="../book_cover.jpg" alt="">
+    </section>
+
+    <section class="asset square" id="aplus-02">
+      <div>
+        <div class="icon-line"></div>
+        <p class="eyebrow">01</p>
+        <h2>空気を<br><span class="red">読む</span></h2>
+      </div>
+      <p class="small">場の温度、相手の立場、組織のルールを観察する。</p>
+    </section>
+
+    <section class="asset square" id="aplus-03">
+      <div>
+        <div class="icon-line"></div>
+        <p class="eyebrow">02</p>
+        <h2>牙を<br><span class="red">研ぐ</span></h2>
+      </div>
+      <p class="small">焦らず、腐らず、勝負所まで準備を積み上げる。</p>
+    </section>
+
+    <section class="asset square" id="aplus-04">
+      <div>
+        <div class="icon-line"></div>
+        <p class="eyebrow">03</p>
+        <h2>軸を<br><span class="red">守る</span></h2>
+      </div>
+      <p class="small">合わせる力を持ちながら、自分の判断を手放さない。</p>
+    </section>
+
+    <section class="asset banner" id="aplus-05">
+      <img class="cover" src="../book_cover.jpg" alt="">
+      <div>
+        <p class="eyebrow">FOR READERS</p>
+        <h2>会社の空気に<br><span class="red">飲まれたくない人へ。</span></h2>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
