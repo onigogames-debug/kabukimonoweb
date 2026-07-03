@@ -44,119 +44,129 @@
       }
     }
     </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ホーム",
-          "item": "https://www.kabukimonostore.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "飄々と戦え",
-          "item": "https://www.kabukimonostore.com/books/hyohyo-to-tatakae/"
-        }
-      ]
-    }
-    </script>
 
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700;900&family=Yuji+Syuku&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&family=Yuji+Syuku&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Audio Control -->
-    <div class="audio-control">
-        <button id="audio-toggle" class="btn-audio"><i class="fas fa-volume-mute"></i> 音声なし</button>
-        <audio id="bg-audio" loop>
-            <source src="promo_video.mp4" type="video/mp4">
-        </audio>
-    </div>
+    <!-- Header Navbar -->
+    <header class="nav-header">
+        <a href="../../" class="logo-link">かぶきもの思考</a>
+        <nav class="nav-links">
+            <a href="../../">ホーム</a>
+            <a href="../hyohyo-to-ikiro/">第1弾</a>
+            <a href="./">第2弾</a>
+            <a href="../../articles/">コラム</a>
+        </nav>
+    </header>
 
-    <!-- Floating CTA -->
-    <div class="floating-cta">
-        <a href="https://www.amazon.co.jp/dp/B0H7F7QK5H?utm_source=kabukimonostore.com&utm_medium=floating_cta&utm_campaign=kdp_launch" target="_blank" class="btn-floating">Amazonで今すぐ読む</a>
-    </div>
-
-    <main class="main-wrapper snap-container">
-        
-        <!-- Page 1: Hero -->
-        <header class="page hero active snap-section" id="page-1">
-            <video autoplay muted loop playsinline class="hero-video-bg">
-                <source src="hero_video_new.mp4" type="video/mp4">
-            </video>
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <div class="hero-title-stack text-logo-wrap">
-                    <h1 class="text-title animate-reveal">飄々と戦え</h1>
-                    <p class="text-subtitle animate-reveal">古典に学ぶ職場生存戦略</p>
-                </div>
-                <div class="cta-wrap reveal-btn">
-                    <a href="https://www.amazon.co.jp/dp/B0H7F7QK5H?utm_source=kabukimonostore.com&utm_medium=hero_cta&utm_campaign=kdp_launch" target="_blank" class="btn-premium">BUY ON AMAZON</a>
+    <!-- Hero Section -->
+    <section class="hero-container">
+        <div class="hero-grid">
+            <div class="hero-visual">
+                <img src="book_cover.jpg" alt="飄々と戦え 書影" class="hero-cover-img">
+            </div>
+            <div class="hero-text-block">
+                <span class="series-badge">かぶきもの思考 シリーズ第2弾</span>
+                <h1 class="hero-title-main">飄々と戦え</h1>
+                <p class="hero-subtitle-main">古典（孫子）に学ぶ、消耗せずに成果を出す職場生存戦略。</p>
+                <div class="hero-ctas">
+                    <a href="https://www.amazon.co.jp/dp/B0H7F7QK5H?utm_source=kabukimonostore.com&utm_medium=book2_hero&utm_campaign=kdp" target="_blank" rel="noopener" class="btn-primary-gold">Amazon Kindleで読む</a>
                 </div>
             </div>
-        </header>
+        </div>
+    </section>
 
-        <!-- Page 2: Chapter 1 Summary -->
-        <section class="page content-split snap-section" id="page-2">
-            <div class="container">
-                <div class="brush-summary-mini">
-                    <h2 class="brush-title-mini">古典（孫子）が教える智慧</h2>
-                    <p class="brush-body-mini">
-                        戦う相手は、上司でも同僚でもない。<br>
-                        日々の消耗、組織の停滞だ。<br>
-                        戦わずして、勝てる形を整えよ。
-                    </p>
+    <!-- Main Content -->
+    <main class="post-layout-wrapper">
+        
+        <!-- Big Quote Section -->
+        <section class="quote-block-section">
+            <div class="quote-card">
+                <p class="quote-text-vertical">戦う相手は、上司でも同僚でもない。<br>日々の消耗、組織の停滞だ。<br>戦わずして、勝てる形を整えよ。</p>
+                <p class="quote-author">— 飄々と戦え より抜粋</p>
+            </div>
+        </section>
+
+        <!-- Chapter Overview Section (孫子の兵法×職場) -->
+        <section class="chapters-section">
+            <h2 class="section-title-main">孫子兵法×職場生存戦略</h2>
+            
+            <div class="chapters-grid">
+                <!-- Chapter 1 (計篇) -->
+                <div class="chapter-card">
+                    <div class="chapter-header">
+                        <span class="chapter-number">計篇</span>
+                        <h3>期待値コントロール</h3>
+                    </div>
+                    <p class="chapter-desc">戦う前に勝負を決める。上司や他部署との「期待値」を事前に見積もり、コントロールすることで、無駄な衝突と残業を未然に防ぐ技術。</p>
+                    <ul class="chapter-bullets">
+                        <li>「五事七計」をオフィスワークに置き換える</li>
+                        <li>事前すり合わせによる手戻りゼロ化</li>
+                    </ul>
                 </div>
-                <div class="center-cta" style="margin-top: 5vh;">
-                    <a href="https://www.amazon.co.jp/dp/B0H7F7QK5H?utm_source=kabukimonostore.com&utm_medium=page2_cta&utm_campaign=kdp_launch" target="_blank" class="btn-premium">解決策を Amazon で見る</a>
+
+                <!-- Chapter 2 (作戦篇) -->
+                <div class="chapter-card">
+                    <div class="chapter-header">
+                        <span class="chapter-number">作戦篇</span>
+                        <h3>報告の技術とリソース配分</h3>
+                    </div>
+                    <p class="chapter-desc">戦争の長期化は国家を滅ぼす。仕事の長期化は会社員を滅ぼす。短い対話で上司を安心させ、自分のリソース（時間・精神）を守る方法。</p>
+                    <ul class="chapter-bullets">
+                        <li>結論から話す「秒速報告」のフレーム</li>
+                        <li>社内承認を最速で通過させる段取り</li>
+                    </ul>
+                </div>
+
+                <!-- Chapter 3 (謀攻篇) -->
+                <div class="chapter-card">
+                    <div class="chapter-header">
+                        <span class="chapter-number">謀攻篇</span>
+                        <h3>「戦わずして勝つ」ポジショニング</h3>
+                    </div>
+                    <p class="chapter-desc">他者と競う必要のない、自分だけの「代替不可の役割」を静かに築く。正面衝突を避け、職場で独自の立ち位置を確立する手法。</p>
+                    <ul class="chapter-bullets">
+                        <li>競合しないスキルの掛け合わせ</li>
+                        <li>敵（社内の対立派閥）を作らない距離感の設計</li>
+                    </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Page 3: Final Action & Separated X Link -->
-        <section class="page footer-wrap snap-section" id="page-3">
-            <!-- Final Purchase Area -->
-            <div class="container action-upper">
-                <div class="final-action-stack">
-                    <h2 class="cta-title-mini">飄々と、したたかに、戦え。</h2>
-                    <div style="margin-top: 2rem;">
-                        <a href="https://www.amazon.co.jp/dp/B0H7F7QK5H?utm_source=kabukimonostore.com&utm_medium=final_cta&utm_campaign=kdp_launch" target="_blank" class="btn-premium">今すぐ Amazon で購入</a>
-                    </div>
-                </div>
+        <!-- Statement Block -->
+        <section class="concept-statement-section">
+            <div class="statement-card">
+                <h2 class="statement-title">百戦百勝は善の善なる者に非ず。</h2>
+                <p class="statement-body">
+                    すべてを真正面から受け止めて戦う必要はありません。<br>
+                    古典の知恵を借り、組織の中でしなやかに、したたかに立ち回る。<br>
+                    明日からの職場での景色が変わる実践的な兵法書です。
+                </p>
             </div>
+        </section>
 
-            <!-- Prominent X Link at the absolute bottom -->
-            <div class="x-footer-area">
-                <div class="container">
-                    <div class="x-link-container">
-                        <a href="https://x.com/Kabukimono_biz" target="_blank" class="x-link-box">
-                            <i class="fab fa-x-twitter"></i>
-                            <span>@Kabukimono_biz</span>
-                        </a>
-                    </div>
-                    <!-- Series Link back to home -->
-                    <div style="margin-bottom: 2rem;">
-                        <a href="../../" class="back-home-link" style="color: var(--secondary); text-decoration: none; font-family: var(--font-body); font-size: 0.9rem;">← 総合トップページに戻る</a>
-                    </div>
-                    <footer class="footer-ultra-minimal">
-                        <p>&copy; 2026 KABUKIMONO. ALL RIGHTS RESERVED.</p>
-                    </footer>
-                </div>
+        <!-- CTA Section -->
+        <section class="final-cta-section">
+            <h2 class="cta-heading-sub">飄々と、したたかに、戦え。</h2>
+            <p class="cta-copy-sub">読み終えた瞬間から、明日の立ち居振る舞いが変わる。</p>
+            <div class="final-buttons">
+                <a href="https://www.amazon.co.jp/dp/B0H7F7QK5H?utm_source=kabukimonostore.com&utm_medium=book2_final&utm_campaign=kdp" target="_blank" rel="noopener" class="btn-primary-gold">Amazon で購入する</a>
+                <a href="../../" class="btn-outline-white">総合トップに戻る</a>
             </div>
         </section>
 
     </main>
 
-    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="articles-footer">
+        <p>&copy; 2026 KABUKIMONO. ALL RIGHTS RESERVED.</p>
+    </footer>
+
 </body>
 </html>
