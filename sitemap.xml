@@ -2,32 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.kabukimonostore.com/</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.kabukimonostore.com/articles/kabukimono-thinking</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://www.kabukimonostore.com/books/hyohyo-to-ikiro/</loc>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.kabukimonostore.com/articles/company-worker-promotion</loc>
-    <lastmod>2026-05-27</lastmod>
+    <loc>https://www.kabukimonostore.com/books/hyohyo-to-tatakae/</loc>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.kabukimonostore.com/articles/work-without-burnout</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.kabukimonostore.com/press-kit</loc>
-    <lastmod>2026-05-27</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.kabukimonostore.com/articles/</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.kabukimonostore.com/articles/company-evaluation-low/</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.kabukimonostore.com/articles/company-worker-self-help-books/</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.kabukimonostore.com/articles/promotion-for-office-workers/</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
