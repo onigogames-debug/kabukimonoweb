@@ -118,7 +118,7 @@ body {
   font-weight: 300;
 }
 
-.btn-primary-red {
+.btn-primary {
   display: inline-block;
   background: var(--primary);
   color: #fff;
@@ -131,7 +131,7 @@ body {
   letter-spacing: 0.05em;
   font-family: var(--font-body);
 }
-.btn-primary-red:hover {
+.btn-primary:hover {
   background: transparent;
   color: var(--primary);
   transform: translateY(-2px);
@@ -324,7 +324,7 @@ body {
   flex-wrap: wrap;
 }
 
-.btn-outline-gold {
+.btn-outline {
   display: inline-block;
   border: 1px solid var(--secondary);
   color: var(--secondary);
@@ -335,7 +335,7 @@ body {
   transition: all 0.3s var(--ease);
   font-family: var(--font-body);
 }
-.btn-outline-gold:hover {
+.btn-outline:hover {
   background: var(--secondary);
   color: #000;
   transform: translateY(-2px);
@@ -379,7 +379,7 @@ body {
     width: 100%;
     align-items: center;
   }
-  .btn-primary-red, .btn-outline-gold {
+  .btn-primary, .btn-outline {
     width: 100%;
     max-width: 320px;
   }
